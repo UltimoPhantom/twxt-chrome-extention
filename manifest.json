@@ -1,0 +1,24 @@
+{
+  "name": "TWXT",
+  "description": "TWXT Chrome Extension to add website url",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "source.html",
+    "default_icon": "twxt.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "send-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Send URL to server"
+    }
+  }
+}
