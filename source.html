@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send URL to TWXT</title>
+    <style>
+      body {
+        width: 250px;
+        text-align: center;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .status {
+        margin-top: 20px;
+        font-size: 14px;
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+      .url {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TWXT Extension</h1>
+    <button id="send-url-button">Send URL</button>
+    
+    <!-- Show the URL here -->
+    <div class="url" id="url-display">No URL sent yet</div>
+    
+    <!-- Show success or error status here -->
+    <div class="status" id="status-display">Awaiting action...</div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="popup.js"></script>
+  </body>
+</html>
